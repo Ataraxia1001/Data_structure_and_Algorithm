@@ -1,3 +1,2 @@
-# coding_interview_prep
+# Data structure and Algorithm
 
-Code to prepare coding interview.(Data structure, algorithm, python modules, etc.)

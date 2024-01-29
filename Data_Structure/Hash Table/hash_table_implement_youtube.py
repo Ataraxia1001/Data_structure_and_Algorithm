@@ -1,3 +1,4 @@
+import pprint
 class HashTable:  
     def __init__(self):
         self.MAX = 100
@@ -24,4 +25,6 @@ class HashTable:
 t = HashTable()
 t["march 6"] = 310
 t["march 7"] = 420
-print(t.arr)
+pp = pprint.PrettyPrinter(width=40, depth=3, compact=False)
+pp.pprint(t.arr)
+print(t["march 6"])

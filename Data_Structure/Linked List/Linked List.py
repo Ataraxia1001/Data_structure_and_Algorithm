@@ -48,6 +48,7 @@ class LinkedList():
       i+=1
     
 
+  # python's garbage collector will clean inaccessible object in memory.
   def remove(self, index): # O(n)
     cur_node = self.head
     i=0
@@ -84,6 +85,7 @@ class LinkedList():
       self.head = self.head.next
       cur_node.next = prev
       prev = cur_node  
+      
     self.head = cur_node
     
 

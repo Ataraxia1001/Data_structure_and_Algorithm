@@ -3,23 +3,23 @@ input_lis = [4, 2, 6, 7, 9, 8]
 #print(input_lis[2:])
 
 
-def search_min(input):
-    min_val = 0
+# def search_min(input):
+#     min_val = 0
     
-    for i in range(len(input)):
-        for j in range(i):
-            #print(i, j)
-            if input[i] <= input[j]:
-                min_val = input[i]
-            else:
-                min_val = input[j]
+#     for i in range(len(input)):
+#         for j in range(i):
+#             #print(i, j)
+#             if input[i] <= input[j]:
+#                 min_val = input[i]
+#             else:
+#                 min_val = input[j]
     
-    min_index = 0
-    for i in range(len(input)):
-        if input[i] == min_val:
-            min_index = i
+#     min_index = 0
+#     for i in range(len(input)):
+#         if input[i] == min_val:
+#             min_index = i
     
-    return min_index, min_val
+#     return min_index, min_val
 
 
 def find_minimum(input_list):
@@ -40,7 +40,7 @@ def find_minimum(input_list):
 
 
 
-print(find_minimum([4, 2, 6, 7, 9, 8]))
+# print(find_minimum([4, 2, 6, 7, 9, 8]))
 
 print('---start selection sort---')
 print('input list:', input_lis)

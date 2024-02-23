@@ -32,7 +32,7 @@ def memoizedadd80():
             return cache[n]
     return memoized
 
-memo = memoizedadd80()
+memo = memoizedadd80() # memo is def memoized(n).
 print(memo(7))
 print(memo(7))
 

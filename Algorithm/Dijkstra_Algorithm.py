@@ -20,14 +20,14 @@ def dijkstra(graph,src,dest):
             visited.append(temp)
             min_heap = []
             for j in graph[temp]:   # if graph[temp]='A', then j='B','C'
-                if j not in visited:  # j is already visited, don't calculate cost again.
+                if j not in visited:  # if j is already visited, don't calculate cost again.
                     cost = node_data[temp]['cost'] + graph[temp][j]   # cost is new cost by passing current node 
                     if cost < node_data[j]['cost']:  # if new cost is less than previous cost
                         node_data[j]['cost'] = cost  # update cost
                         node_data[j]['pred'] = node_data[temp]['pred'] + [temp] # pred is used to store path. if new path is found, update it.
                     heappush(min_heap,(node_data[j]['cost'],j)) 
         heapify(min_heap) # heapify creates min_heap by default. 
-        temp = min_heap[0][1]   
+        temp = min_heap[0][1]   # pick the node with minimum cost for next current node.
     print("Shortest Distance: " + str(node_data[dest]['cost']))
     print("Shortest Path: " + str(node_data[dest]['pred'] + list(dest)))
 
